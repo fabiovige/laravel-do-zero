@@ -19,7 +19,7 @@ Route::namespace('Site')->group(function(){
 
     Route::get('blog', 'BlogController');
 
-    Route::view('sobre', 'site.about.index');
+    Route::view('sobre', 'site.about.index')->name('site.sobre');
 
     Route::get('contato', 'ContactController@index');
     Route::post('contato', 'ContactController@contact');
